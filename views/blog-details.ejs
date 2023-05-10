@@ -1,0 +1,84 @@
+<%- include('./partials/header.ejs')  %>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+	<%-include('./partials/nav.ejs') %>
+
+				<!-- Main -->
+					<div id="main" class="alt" style="min-height: 100vh;">
+
+						<!-- One -->
+							<section id="one" class="bg-feather read">
+			
+								<div class="inner">
+									<header class="major">
+										<h1><%=data.blogTitle %></h1>
+										<hr>
+										<h4><i class="fa fa-user"></i> Ajevi Sally </h4>
+										<h6><i class="fa fa-calendar"></i> <%=data.createdAt%></h6>
+										 
+										
+									</header>
+									<span class="image main"><img src="/images/blog-fullscreen-1-1920x700.jpg" alt="" /></span>
+									
+									<p><%=data.body %></p>
+								</div>
+							
+							</section>
+
+					</div>
+
+					<!--<section id="contact">
+						<div class="inner">
+							<section>
+								<header class="major">
+									<h2>Leave a Comment</h2>
+								</header>
+
+								<form method="post" action="/comment">
+									<div class="fields">
+										<div class="field">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name">
+										</div>
+
+										<div class="field">
+											<label for="comment">Comment</label>
+											<textarea name="comment" id="comment" rows="6"></textarea>
+										</div>
+
+										<div class="field half text-right">
+											<ul class="actions">
+												<li><input type="submit" value="Comment" class="primary"></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+							<section class="split">
+								<h3>Comments</h3>
+								<section id="comment">
+									
+									
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-share"></span>
+										<h3>Share</h3>
+
+										<p style="position: relative;">
+											<a href="#" style="position: relative;" class="icon alt fa-twitter"><span class="label">Twitter</span></a> &nbsp;
+											<a href="#" style="position: relative;" class="icon alt fa-facebook"><span class="label">Facebook</span></a> &nbsp;
+											<a href="#" style="position: relative;" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a> &nbsp;
+											<a href="#" style="position: relative;" class="icon alt fa-behance"><span class="label">Behance</span></a>
+										</p>
+									</div>
+								</section> 
+							</section>
+						</div>
+					</section>-->
+
+					<%- include('./partials/footer.ejs')  %>
+					
