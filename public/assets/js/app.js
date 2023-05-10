@@ -2,7 +2,7 @@
 
 let temp=''
 window.addEventListener('DOMContentLoaded',()=>{
-    fetch('http://localhost:3000/new-blog')
+    fetch('https://ajevisally.onrender.com/new-blog')
 
     .then(response => response.json())
     .then(data =>{
