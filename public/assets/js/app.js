@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     setTimeout(()=>{
         preloader.classList.add('hide')
     },2000)
-    fetch('http://localhost:3000/new-blog')
+    fetch('https://ajevisally.onrender.com/new-blog')
 
     .then(response => response.json())
     .then(data =>{
