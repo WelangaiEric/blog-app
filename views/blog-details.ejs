@@ -23,7 +23,7 @@
 									</header>
 									<span class="image main"><img src="/images/blog-fullscreen-1-1920x700.jpg" alt="" /></span>
 									
-									<p><%=data.body %></p>
+									<p><%=data.body.replace(/.(?=[A-Z])/g, '<br /><br />') %></p>
 								</div>
 							
 							</section>

@@ -79,16 +79,29 @@ app.get('/new-blog',(req,res)=>{
 
 })
 app.get('/blogs-read/:id',async(req,res)=>{
-    let id = req.params
+  
     let data = await Blogs.findById(req.params.id)
     // res.send(data)
     res.render('blog-details',{title:'read blog',bg:'pink',data:data})
     
 })
+app.get('/delete/:id',async(req,res)=>{
+    
+    await Blogs.findByIdAndDelete(req.params.id)
+    .then((result)=>{
+        
+    res.render('admin',{title:'Admin',bg:'none'})
+
+    })
+    .catch((err)=>{
+        res.send(err)
+    })
+})
 // validation\
 app.post('/validate',(req,res)=>{
     if(req.body.email==='ajevisally@gmail.com'&& req.body.password==='sally12@2023'){
-        res.render('newPost',{title:'New Blog',bg:'pink'})
+        res.render('admin',{title:'Admin',bg:'none'})
+        
     }
     else{
         res.render('login',{title:'login',bg:'pink',alert:'Incorrect email or password'})
@@ -112,9 +125,13 @@ app.get('/blogs-read',(req,res)=>{
 app.get('/contact',(req,res)=>{
     res.render('contact',{title:'contact',bg:'pink'})
 })
-// app.get('/post',(req,res)=>{
-//     res.render('newPost',{title:'New Blog',bg:'pink'})
-// })
+app.get('/post',(req,res)=>{
+    res.render('newPost',{title:'New Blog',bg:'pink'})
+    
+})
 app.get('/login',(req,res)=>{
+    res.render('login',{title:'login',bg:'pink'})
+})
+app.get('/logout',(req,res)=>{
     res.render('login',{title:'login',bg:'pink'})
 })

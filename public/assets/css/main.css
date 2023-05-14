@@ -470,7 +470,130 @@ input::-moz-focus-inner {
 	textarea {
 		padding: 0.75em 1em;
 	}
+	.preloader{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #000;
+		position: absolute;
+		z-index: 120;
+	}
+	.hide{
+		display: none;
+	}
+	.load-icon{
+		width: 100px;
+		height: 100px;
+	}
+	.load-icon img{
+		width: 100%;
+	}
+	.blogs{
+		width: 99%;
+		height: 100px;
+		/* border: #000 solid 1px; */
+		margin: 10px;
+		padding: 10px;
+		justify-content: space-around;
+		align-items: center;
+		position: relative;
+	}
+	.blogs h3{
+		width: 5%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.image{
+		width: 20%;
+		height: 84px;
+		/* border: #37ff00 solid 1px; */
+		border-radius: 8px;
 
+	}
+	@media screen and (min-width:996px) {
+			.image{
+		width: 10%;
+	}
+	}
+
+	.image img{
+		width: 100%;
+	}
+	.details{
+		width: 60%;
+		border-radius: 8px;
+		
+
+		/* border: #1a0451 solid 1px; */
+
+	}
+	.details p{
+		width: 100%;
+		color: #000;
+		margin: 0;
+		padding: 0 10px;
+		
+		/* border: #961919 solid 1px; */
+
+		text-align: left;
+	}
+	.details p strong{
+		color: #242943;
+	}
+	.blog-disp:nth-child(even){
+		background-color: #e6e4e4;
+	}
+	.blod-disp:nth-child(odd){
+		background-color: #c4c2c2;
+	}
+	.icons{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.icons a{
+		font-size: 32px;
+	}
+	.alerter{
+		width: 300px;
+		height: 200px;
+		/* border: #000 solid 1px; */
+		position: absolute;
+		left: 20%;
+		top: 30%;
+		display: none;
+		background-color: #c0c0c0;
+		z-index: 80;
+		box-shadow: 10px 10px 10px black;
+		animation: animate 4s linear ease-in;
+	}
+	.alert-header{
+		display: flex;
+		justify-content: space-around;
+	}
+	.alert-header h4{
+		text-align: left;
+	}
+	.alert-body{
+		width: 100%;
+		height: 80%;
+		border-top: 1px solid black;
+	}
+	.show{
+		display: flex;
+		flex-direction: column;
+	}
+	@keyframes animate {
+		0%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
+	}
 	::-webkit-input-placeholder {
 		color: rgba(244, 244, 255, 0.2) !important;
 		opacity: 1.0;
