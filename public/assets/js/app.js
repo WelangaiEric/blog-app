@@ -2,7 +2,7 @@
 
 let temp=''
 window.addEventListener('DOMContentLoaded',()=>{
-    fetch('http://localhost:3000/new-blog')
+    fetch('https://ajevisally.onrender.com/new-blog')
 
     .then(response => response.json())
     .then(data =>{
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded',()=>{
             <header class="major">
                 <h3>${blog.snippet}</h3>
 
-                <p><br> <span>Ajiv Sally</span> | <span>${blog.createdAt} </span></p>
+                <p><br> <span>Ajevi Sally</span> | <span>${blog.createdAt} </span></p>
 
                 <div class="major-actions">
                     <a href="/blogs-read/${blog._id}" class="button small next scrolly">Read Blog</a>
