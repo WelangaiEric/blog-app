@@ -255,7 +255,7 @@ input::-moz-focus-inner {
 		width: -webkit-max-content;
 		width: -ms-max-content;
 		width: max-content;
-		margin-bottom: 2em;
+		/* margin-bottom: 2em; */
 	}
 
 		header.major > :first-child {
@@ -693,6 +693,7 @@ input::-moz-focus-inner {
 
 		.image img {
 			display: block;
+			object-fit: cover;
 		}
 
 		.image.left, .image.right {
@@ -729,6 +730,7 @@ input::-moz-focus-inner {
 			display: block;
 			margin: 2.5em 0;
 			width: 100%;
+			height: 50%;
 		}
 
 			.image.main img {
@@ -2100,6 +2102,10 @@ input::-moz-focus-inner {
 				margin: 0 auto;
 				max-width: 65em;
 				width: calc(100% - 6em);
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				min-height: 100vh;
 			}
 
 				@media screen and (max-width: 736px) {
