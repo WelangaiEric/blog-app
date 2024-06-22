@@ -2,7 +2,7 @@
 
 let temp=''
 window.addEventListener('DOMContentLoaded',()=>{
-    fetch('https://ajevisally.onrender.com/new-blog')
+    fetch('https://blog-app-yxqa.onrender.com/new-blog')
 
     .then(response => response.json())
     .then(data =>{
@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     .catch((err)=>{
         console.log(err)
     })
-    fetch('http://localhost:3000/comment')
+    fetch('https://blog-app-yxqa.onrender.com/comment')
 
     .then(response => response.json())
     .then(data =>{
@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     setTimeout(()=>{
         preloader.classList.add('hide')
     },2000)
-    fetch('https://ajevisally.onrender.com/new-blog')
+    fetch('https://blog-app-yxqa.onrender.com/new-blog')
 
     .then(response => response.json())
     .then(data =>{
