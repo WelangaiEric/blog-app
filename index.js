@@ -99,7 +99,7 @@ app.get('/delete/:id',async(req,res)=>{
 })
 // validation\
 app.post('/validate',(req,res)=>{
-    if(req.body.email==='ajevisally@gmail.com'&& req.body.password==='sally12@2023'){
+    if(req.body.email==='ginapudo@gmail.com'&& req.body.password==='test@123'){
         res.render('admin',{title:'Admin',bg:'none'})
         
     }
